@@ -1,0 +1,97 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+// ≥1680px
++media-breakpoint-down(xxl)
+
+// ≥1200px
++media-breakpoint-down(xl)
+
+// ≥1440px
++media-breakpoint-down(lg)
+	.header
+		padding: 10px 0
+		&_logo
+			margin-bottom: 0
+		&_nav a
+			font-size: 16px
+			padding: 0px 20px 20px 0
+			margin: 0px 0px 0 0
+		&_control
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			&__link
+				font-size: 16px
+		&_top-line
+			border: none
+		&_logo
+			border: none
+			img
+				width: 75%
+		&__btn
+			width: 240px
+			height: 50px
+			font-size: 18px
+			font-weight: 400
+			flex: 0 0 240px
+			margin-top: 0px
+
+	.main-screen
+		padding: 0
+		.h1
+			font-size: 60px
+			font-weight: 600
+		&_description
+			font-size: 20px
+			padding: 0 60px
+			margin: 0px 0 0
+		.btn_transparent
+			width: 258px
+			height: 64px
+			font-size: 16px
+			margin: 10px auto 40px
+			
+// ≥1270px
++media-breakpoint-down(md)
+
+
+
+// ≥1070px
++media-breakpoint-down(sm)   
+	.header
+		&_nav
+			display: none 
+			&__btn-hamburger
+				display: inline-block
+
+
+		
+// ≥1024px
++media-breakpoint-down(xs)
+
+// ≥768px
++media-breakpoint-down(ss)
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(ss)
+
+//
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+//
++media-breakpoint-up(xxl)

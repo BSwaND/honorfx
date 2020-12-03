@@ -3,20 +3,20 @@
 @import libs
 
 ::-webkit-scrollbar
-  width: 5px
+  width: 8px
   height: 5px
 ::-webkit-scrollbar-track
   background-color: #999
 ::-webkit-scrollbar-track-piece
-  background-color: #ffffff
+  background-color:  #EDEEEF
 ::-webkit-scrollbar-thumb
   height: 50px
-  background-color: $grey
+  background-color: #CBCFD4
   border-radius: 3px
 ::-webkit-scrollbar-corner
-  background-color: $grey
+  background-color: #EDEEEF
 ::-webkit-resizer
-  background-color: $grey
+  background-color: #EDEEEF
 
 @mixin background-linear-gradient
   position: absolute
@@ -49,7 +49,6 @@
 	transition: all 0.4s ease-in-out
 	margin-bottom: 10px 
 	&:hover
-		color: red
 
 	&_transparent
 		border: 2px solid $text
@@ -63,11 +62,6 @@
 			background: none
 			color: $disabled-link
 			border: 3px solid $disabled-link
-
-
-
-
-
 	&_xl
 		width: 280px
 		height: 80px
@@ -81,3 +75,77 @@
 	&__inner
 		position: relative
 		z-index: 10
+
+	&_blue
+		background: $text
+		color: #fff
+		&:hover
+			background: $hover-link
+			color: #fff
+		&:active
+			background: #fff
+			border: 1px solid  $hover-link
+			color: $hover-link
+			border-radius: 50px
+		&:disabled
+			background: $text-grey
+			color: #fff
+
+	&_white
+		background: #fff 
+		color:  $text
+		&:hover
+			background: $hover-link
+			color: #fff
+		&:active
+			background: #fff
+			border: 1px solid  $hover-link
+			color: $hover-link
+			border-radius: 50px
+		&:disabled
+			background: $text-grey
+			color: #fff
+
+
+.btn-up
+	width: 75px
+	height: 75px
+	background: #CBCFD4
+	border-radius: 50%
+	position: fixed
+	bottom: 30px
+	right: 50px
+
+
+
+
+
+.link-arrow
+	display: inline-block
+	text-transform: uppercase
+	color: $accent-1
+	position: relative
+	transition: all 0.4s ease-in-out
+	font-weight: 600
+	&:after
+		content: ''
+		position: absolute
+		top: 2px
+		right: -30px
+		height: 40px
+		width: 25px
+		background: url(../images/arroy/arrow.svg) no-repeat
+		transition: all 0.4s ease-in-out
+	&:hover
+		color: $gr-start
+		&:after
+			background: url(../images/arroy/arrow-hover.svg) no-repeat
+	&:active
+		color: $text
+		&:after
+			background: url(../images/arroy/arrow-active.svg) no-repeat
+	&:disabled
+		color: $text-grey
+		&:after
+			background: url(../images/arroy/arrow-disable.svg) no-repeat
+

@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18b2f950-b058-432d-8119-9fc6281ee24f" name="Default Changelist" comment="" />
+    <list default="true" id="18b2f950-b058-432d-8119-9fc6281ee24f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/fonts/Poppins-ExtraBoldItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/fonts/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/fonts/Poppins-ExtraBoldItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/fonts/Poppins-ExtraBoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/MacBook-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/MacBook-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/Bank-transfe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/Bitpay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/FasaPay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/Mastercard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/Neteller.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/PayPal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/Perfect-Money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/Skrill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/UnionPay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/accept/Visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/arroy/arrow-active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/arroy/arrow-disable.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/arroy/arrow-hover.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/arroy/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/bg-education.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/block-platform.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/icon-play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/player-bg-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/player-bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/why_honorfx-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/why_honorfx-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizedHTML/app/images/why_honorfx-3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimizedHTML/app/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/optimizedHTML/app/css/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimizedHTML/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/optimizedHTML/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimizedHTML/app/sass/_btn.sass" beforeDir="false" afterPath="$PROJECT_DIR$/optimizedHTML/app/sass/_btn.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimizedHTML/app/sass/_fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/optimizedHTML/app/sass/_fonts.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimizedHTML/app/sass/_vars.sass" beforeDir="false" afterPath="$PROJECT_DIR$/optimizedHTML/app/sass/_vars.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optimizedHTML/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/optimizedHTML/app/sass/main.sass" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,13 +49,20 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1l627Yxm6UpfBNtggtrsJB8rXAh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -31,18 +77,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606903053680</updated>
-      <workItem from="1606903054763" duration="20861000" />
+      <workItem from="1606903054763" duration="20956000" />
+      <workItem from="1606979016363" duration="310000" />
+      <workItem from="1606979535359" duration="30811000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="600" height="428" key="javadoc.popup" timestamp="1606913673336">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1606996529318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="428" key="javadoc.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606913673336" />
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606996529318" />
+    <state x="616" y="335" key="run.anything.popup" timestamp="1607006639805">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="335" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1607006639805" />
     <state x="622" y="371" width="672" height="678" key="search.everywhere.popup" timestamp="1606921821522">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

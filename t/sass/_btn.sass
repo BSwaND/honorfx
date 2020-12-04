@@ -1,0 +1,348 @@
+@import vars
+@import fonts
+@import libs
+
+::-webkit-scrollbar
+  width: 8px
+  height: 5px
+::-webkit-scrollbar-track
+  background-color: #EDEEEF
+::-webkit-scrollbar-track-piece
+  background-color:  #EDEEEF
+::-webkit-scrollbar-thumb
+  height: 50px
+  background-color: #CBCFD4
+  border-radius: 3px
+::-webkit-scrollbar-corner
+  background-color: #EDEEEF
+::-webkit-resizer
+  background-color: #EDEEEF
+
+
+@mixin background-linear-gradient
+  position: absolute
+  width: 100%
+  height: 100%
+  content: ''
+  top: 0
+  left: 0
+  background: (linear-gradient(top, rgba(0,0,0,0.1) 0%,  rgba(0,0,0,0.1) 21%, rgba(0,0,0,1) 100%))
+
+
+@keyframes spin
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+
+
+.btn
+	width: 260px
+	height: 60px
+	text-transform: uppercase
+	font-weight: 600
+	display: flex
+	border-radius: 50px
+	align-items: center
+	justify-content: center
+	font-size: 16px
+	transition: all 0.4s ease-in-out
+	margin-bottom: 10px 
+	&:hover
+
+	&_transparent
+		border: 2px solid $text
+		&:hover
+			background: $hover-link
+			color: #fff
+		&:active
+			background: $active-link
+			color: #fff
+		&:disabled
+			background: none
+			color: $disabled-link
+			border: 3px solid $disabled-link
+	&_xl
+		width: 280px
+		height: 80px
+	&_md
+		width: 260px
+		height: 60px
+	&_xs
+		width: 200px
+		height: 50px
+
+	&__inner
+		position: relative
+		z-index: 10
+
+	&_blue
+		background: $text
+		color: #fff
+		&:hover
+			background: $hover-link
+			color: #fff
+		&:active
+			background: #fff
+			border: 1px solid  $hover-link
+			color: $hover-link
+			border-radius: 50px
+		&:disabled
+			background: $text-grey
+			color: #fff
+
+	&_white
+		background: #fff 
+		color:  $text
+		&:hover
+			background: $hover-link
+			color: #fff
+		&:active
+			background: #fff
+			border: 1px solid  $hover-link
+			color: $hover-link
+			border-radius: 50px
+		&:disabled
+			background: $text-grey
+			color: #fff
+
+
+.btn-up
+	width: 75px
+	height: 75px
+	background: #CBCFD4
+	border-radius: 50%
+	position: fixed
+	bottom: 30px
+	right: 50px
+	text-align: center
+	line-height: 70px
+	transition: all 0.4s ease-in-out
+	z-index: -1
+	opacity: 0
+	&:hover
+		background: #AAB1B9
+	&:active
+		background: #7F8286
+	&_active
+		z-index: 1
+		opacity: 1
+
+
+
+
+
+.link-arrow
+	display: inline-block
+	text-transform: uppercase
+	color: $accent-1
+	position: relative
+	transition: all 0.4s ease-in-out
+	font-weight: 600
+	&:after
+		content: ''
+		position: absolute
+		top: 2px
+		right: -30px
+		height: 40px
+		width: 25px
+		background: url(../images/arroy/arrow.svg) no-repeat
+		transition: all 0.4s ease-in-out
+	&:hover
+		color: $gr-start
+		&:after
+			background: url(../images/arroy/arrow-hover.svg) no-repeat
+	&:active
+		color: $text
+		&:after
+			background: url(../images/arroy/arrow-active.svg) no-repeat
+	&:disabled
+		color: $text-grey
+		&:after
+			background: url(../images/arroy/arrow-disable.svg) no-repeat
+
+
+			
+			
+// Start magbific-popap
+.mfp-content
+	max-width: 460px
+	min-height: 620px
+	background: #fff
+	border-radius: 10px
+	position: relative
+	&:after
+		content: ''
+		width: 100%
+		height: 20px
+		background: linear-gradient(270deg, $gr-start 0%, $gr-end 50%, $gr-start 100% )  0 0 / 200% 100%
+		display: block
+		animation: popLine 5s ease-in-out infinite
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
+		bottom: 0
+		position: absolute
+		z-index: 10
+
+.popup-modal-dismiss
+	position: absolute
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 1px solid
+	text-align: center
+	line-height: 27px
+	color: #fff
+	top: -30px
+	right: -30px
+	opacity: 0.1
+	transition: all 0.4s
+	&:hover
+		opacity: .5
+		color: #fff
+
+@keyframes popLine
+	0%
+		background-position: 200% 0
+	50%
+		background-position: 100% 0
+	100%
+		background-position: 0% 0
+
+
+.white-popup-block
+	&_body
+
+
+
+
+// End magbific-popap
+
+
+
+// Start tab
+.tab
+	&_btn
+		background: linear-gradient(270deg, $gr-end 0%, $gr-start 50% #fff 100%) 0  0 / 100% 100%
+		border-radius: 0
+		transition: all 0.4s
+		cursor: pointer
+		&.active
+			background: #fff
+		&:first-child
+			border-top-left-radius: 10px
+		&:last-child
+			border-top-right-radius: 10px
+	&_section
+		display: block
+		opacity: 1
+		z-index: 1
+		height: auto
+		transition: opacity 0.0s, height 0s
+	&_window
+		display: none
+		opacity: 0
+		height: 0
+		z-index: -1
+		transition: opacity 0.4s, height 0s
+		&.display-block
+			display: block
+			opacity: 1
+			height: auto
+			transition: all 0s
+
+	&_btn-block
+		display: flex
+		
+// End tab
+
+
+
+// Start form
+.reg-form,
+.login-form
+	&::placeholder
+		color: #9A9BAA
+	padding: 30px
+	font-size: 12px
+	color: #504F5B
+	label
+		display: block
+		span
+			display: block
+	&__input
+		border: none
+		border-bottom: 1px solid $grey
+		width: 100%
+		color: #9A9BAA
+		padding: 3px 0 6px
+	select
+		color: #9A9BAA
+		width: 100%
+		border: none
+		border-bottom: 1px solid $grey
+		padding: 0 0 9px 0
+		&:focus
+			outline: none
+
+
+	&__radio
+		display: none
+		&_outer
+			display: flex
+			justify-content: center
+			margin: 30px 0 60px
+
+		&_label
+			height: 20px
+			width: 20px
+			border-radius: 50%
+			border: 1px solid $grey
+			display: inline-block
+			margin-right: 20px
+
+	.mobil
+		position: relative
+		&_tel
+			position: absolute
+			left: 80px
+			max-width: 70%
+			border-bottom: none
+
+	.btn_blue
+		margin: auto
+		border: none
+
+
+
+.login-form
+	&__after
+		&_block
+			position: absolute
+			background: linear-gradient(270deg, $gr-start 0%, $gr-end 50%, $gr-start 100% )  0 0 / 200% 100%
+			bottom: 0
+			height: 200px
+			width: 100%
+			animation: popLine 5s ease-in-out infinite
+		&_text
+			text-align: right
+			font-size: 50px
+			font-weight: 900
+			line-height: 50px
+			text-stroke: 1px #fff
+			-webkit-text-stroke: 1px #fff
+			color: transparent
+			font-style: italic
+			padding-right: 30px
+			padding-top: 30px
+
+	.reg-form__radio_outer
+		justify-content: flex-start
+		position: relative
+
+.link__forgot-password
+	position: absolute
+	right: 0
+
+// End form

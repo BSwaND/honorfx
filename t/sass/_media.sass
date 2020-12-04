@@ -1,0 +1,328 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+// ≥1680px
++media-breakpoint-down(xxl)
+	body
+		font-size: 20px
+	.h2
+		font-size: 48px
+	.h4
+		font-size: 28px
+		
+	.block_description
+		font-size: 24px
+		width: 75%
+		margin:    auto
+		
+	.header
+		padding: 10px 0
+		&_top-line
+			margin-bottom: 0px
+		&_nav
+			a
+				margin-right: 10px
+		&__btn
+			width: 290px
+			height: 60px
+			font-size: 18px
+			&_outer
+				margin-top: 10px
+
+	.main-screen
+		margin-bottom: 90px
+		.h1
+			font-size: 72px
+			margin-top: 90px
+		.btn_transparent
+			margin: 20px auto 60px
+			width: 300px
+			height: 70px
+		img
+			height: auto;
+			width: 76%;
+			object-fit: cover;
+		.block_description
+			margin-bottom: 40px
+
+	.bullet-block
+		margin-bottom: 107px
+		.block_description
+			margin-bottom: 30px
+		&_items
+			margin-top: 0
+		&_item__header
+			font-size: 32px
+
+
+	.what-trade
+		&_traders
+			&_item
+				flex: 0 0 380px
+				height: 380px
+				padding: 30px
+				&__img
+					font-size: 120px
+				&__btn_outer
+					height: 64px
+					bottom: 30px
+					right: 30px
+		&_block
+			min-height: 760px
+			.h3
+				line-height: 70px
+				margin-bottom: 30px
+		&_description
+			font-size: 20px
+			width: 75%
+			margin-bottom: 30px
+
+	.our-platforms
+		&_info-blok
+			margin-top: 50px
+		&_p
+			font-size: 22px
+		&_ul
+			margin-top: 30px
+			font-size: 22px
+			margin-bottom: 20px
+		&_block
+			padding-bottom: 135px
+			.btn_transparent
+				width: 350px
+				height: 90px
+				font-size: 22px
+
+		&_footer_link
+			display: inline-block
+			margin: 0 10px
+			svg
+				height: 43px
+			&-block
+				margin-top: 20px
+		&__img
+			height: 65%;
+			top: 220px;
+
+
+	.mt5
+		&_block
+			padding: 198px 0 160px
+			margin-bottom: 30px
+			.btn_transparent
+				width: 350px
+				height: 90px
+				font-size: 22px
+		&__img
+			top: 130px
+			height: 72%
+			width: auto
+
+
+	.accounts-provide
+		margin-bottom: 40px
+		&_item
+			&__head
+				font-size: 30px
+				&:before
+					height: 155px
+					margin-bottom: 60px
+			&_body 
+				padding: 0px 70px
+				margin-bottom: 60px
+			&_items 
+				margin: 60px 0 20px
+		.btn_transparent 
+			margin: 0 auto 70px
+		.btn_blue
+			width: 320px
+			height: 96px
+			font-size: 22px
+
+
+	.why_honorfx
+		padding: 70px 0 40px
+		&__header
+			font-size: 40px
+		.btn_white
+			width: 300px
+			height: 70px
+			font-size: 24px
+
+
+	.video-block
+		&_img
+			&__outer
+				//width: 80%
+
+		&__header
+			margin: 170px 0 30px
+			font-size: 44px
+
+	.educational-videos
+		padding: 90px 0
+		height: 964px
+		&__img
+			top: 130px
+			width: 58%
+		&__text
+			margin-bottom: 30px;
+		.h2 
+			letter-spacing: -4px
+			line-height: 64px
+			margin-bottom: 30px
+
+	.download-guide
+		padding: 50px 0
+		margin-bottom: 140px
+		&__header
+			font-size: 42px
+		.btn
+			height: 70px
+			width: 300px
+
+
+	.trad-steps
+		margin-bottom: 100px
+		&_item
+			&__int
+				height: 90px
+				width: 90px
+				line-height: 90px;
+				font-size: 34px
+			&__text
+				font-size: 22px
+			&__title
+				font-size: 32px
+
+	.we-accept
+		margin-bottom: 130px
+		&_metod
+			margin-top: 50px;
+			&__inner
+				flex: 0 0 280px
+				padding: 25px  50px;
+		.btn_transparent
+			margin: 100px auto
+			width: 300px
+			height: 70px
+			font-size: 20px
+
+
+	.footer
+		font-size: 19px
+		&_col
+			&-item
+				&-1
+					flex: 0 0 420px
+					line-height: 27px;
+				&-2
+					flex: 0 0 670px
+		&__info
+			height: 265px
+			font-size: 16px
+			padding: 25px 35px
+			border-radius: 10px
+		&_address_item 
+			font-size: 16px;
+			margin: 0px 0 20px;
+		&_link
+			font-size: 16px
+
+	.btn-up 
+		width: 65px;
+		height: 65px;
+		line-height: 65px
+
+
+// ≥1200px
++media-breakpoint-down(xl)
+
+// ≥1440px
++media-breakpoint-down(lg)
+	.header
+		padding: 10px 0
+		&_logo
+			margin-bottom: 0
+		&_nav a
+			font-size: 16px
+			padding: 0px 20px 20px 0
+			margin: 0px 0px 0 0
+		&_control
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			&__link
+				font-size: 16px
+		&_top-line
+			border: none
+		&_logo
+			border: none
+			img
+				width: 75%
+		&__btn
+			width: 240px
+			height: 50px
+			font-size: 18px
+			font-weight: 400
+			flex: 0 0 240px
+			margin-top: 0px
+
+	.main-screen
+		padding: 0
+		.h1
+			font-size: 60px
+			font-weight: 600
+		&_description
+			font-size: 20px
+			padding: 0 60px
+			margin: 0px 0 0
+		.btn_transparent
+			width: 258px
+			height: 64px
+			font-size: 16px
+			margin: 10px auto 40px
+			
+// ≥1270px
++media-breakpoint-down(md)
+
+
+
+// ≥1070px
++media-breakpoint-down(sm)   
+	.header
+		&_nav
+			display: none 
+			&__btn-hamburger
+				display: inline-block
+
+
+		
+// ≥1024px
++media-breakpoint-down(xs)
+
+// ≥768px
++media-breakpoint-down(ss)
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(ss)
+
+//
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+//
++media-breakpoint-up(xxl)

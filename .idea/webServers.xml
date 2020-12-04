@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2b07a8ee-cd1f-476b-b7c7-0817bc4896af" name="honorfx.u.org.ua" url="http://195.138.64.213">
+        <fileTransfer rootFolder="/www/honorfx.u.org.ua" host="195.138.64.213" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

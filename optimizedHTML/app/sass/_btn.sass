@@ -6,7 +6,7 @@
   width: 8px
   height: 5px
 ::-webkit-scrollbar-track
-  background-color: #999
+  background-color: #EDEEEF
 ::-webkit-scrollbar-track-piece
   background-color:  #EDEEEF
 ::-webkit-scrollbar-thumb
@@ -17,6 +17,7 @@
   background-color: #EDEEEF
 ::-webkit-resizer
   background-color: #EDEEEF
+
 
 @mixin background-linear-gradient
   position: absolute
@@ -115,6 +116,18 @@
 	position: fixed
 	bottom: 30px
 	right: 50px
+	text-align: center
+	line-height: 70px
+	transition: all 0.4s ease-in-out
+	z-index: -1
+	opacity: 0
+	&:hover
+		background: #AAB1B9
+	&:active
+		background: #7F8286
+	&_active
+		z-index: 1
+		opacity: 1
 
 
 
@@ -149,3 +162,187 @@
 		&:after
 			background: url(../images/arroy/arrow-disable.svg) no-repeat
 
+
+			
+			
+// Start magbific-popap
+.mfp-content
+	max-width: 460px
+	min-height: 620px
+	background: #fff
+	border-radius: 10px
+	position: relative
+	&:after
+		content: ''
+		width: 100%
+		height: 20px
+		background: linear-gradient(270deg, $gr-start 0%, $gr-end 50%, $gr-start 100% )  0 0 / 200% 100%
+		display: block
+		animation: popLine 5s ease-in-out infinite
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
+		bottom: -12px
+		position: absolute
+		z-index: 10
+
+.popup-modal-dismiss
+	position: absolute
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 1px solid
+	text-align: center
+	line-height: 27px
+	color: #fff
+	top: -30px
+	right: -30px
+	opacity: 0.1
+	transition: all 0.4s
+	&:hover
+		opacity: .5
+		color: #fff
+
+@keyframes popLine
+	0%
+		background-position: 200% 0
+	50%
+		background-position: 100% 0
+	100%
+		background-position: 0% 0
+
+
+.white-popup-block
+	&_body
+
+
+
+
+// End magbific-popap
+
+
+
+// Start tab
+.tab
+	&_btn
+		background: linear-gradient(270deg, $gr-end 0%, $gr-start 50% #fff 100%) 0  0 / 100% 100%
+		border-radius: 0
+		transition: all 0.4s
+		cursor: pointer
+		&.active
+			background: #fff
+		&:first-child
+			border-top-left-radius: 10px
+		&:last-child
+			border-top-right-radius: 10px
+	&_section
+		display: block
+		opacity: 1
+		z-index: 1
+		height: auto
+		transition: opacity 0.0s, height 0s
+	&_window
+		display: none
+		opacity: 0
+		height: 0
+		z-index: -1
+		transition: opacity 0.4s, height 0s
+		&.display-block
+			display: block
+			opacity: 1
+			height: auto
+			transition: all 0s
+
+	&_btn-block
+		display: flex
+		
+// End tab
+
+
+
+// Start form
+.reg-form,
+.login-form
+	&::placeholder
+		color: #9A9BAA
+	padding: 30px
+	font-size: 12px
+	color: #504F5B
+	label
+		display: block
+		span
+			display: block
+	&__input
+		border: none
+		border-bottom: 1px solid $grey
+		width: 100%
+		color: #9A9BAA
+		padding: 3px 0 6px
+	select
+		color: #9A9BAA
+		width: 100%
+		border: none
+		border-bottom: 1px solid $grey
+		padding: 0 0 9px 0
+		&:focus
+			outline: none
+
+
+	&__radio
+		display: none
+		&_outer
+			display: flex
+			justify-content: center
+			margin: 30px 0 60px
+
+		&_label
+			height: 20px
+			width: 20px
+			border-radius: 50%
+			border: 1px solid $grey
+			display: inline-block
+			margin-right: 20px
+
+	.mobil
+		position: relative
+		&_tel
+			position: absolute
+			left: 80px
+			max-width: 70%
+			border-bottom: none
+
+	.btn_blue
+		margin: auto
+		border: none
+
+
+
+.login-form
+	&__after
+		&_block
+			position: absolute
+			background: linear-gradient(270deg, $gr-start 0%, $gr-end 50%, $gr-start 100% )  0 0 / 200% 100%
+			bottom: 0
+			height: 200px
+			width: 100%
+			animation: popLine 5s ease-in-out infinite
+		&_text
+			text-align: right
+			font-size: 50px
+			font-weight: 900
+			line-height: 50px
+			text-stroke: 1px #fff
+			-webkit-text-stroke: 1px #fff
+			color: transparent
+			font-style: italic
+			padding-right: 30px
+			padding-top: 30px
+
+	.reg-form__radio_outer
+		justify-content: flex-start
+		position: relative
+
+.link__forgot-password
+	position: absolute
+	right: 0
+
+// End form
